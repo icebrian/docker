@@ -8,7 +8,7 @@ services:
             user: root
             password: Password1
             right: WRITE
-            url: https://raw.githubusercontent.com/icebrian/docker/php-mysql-app/database.sql
+            url: https://raw.githubusercontent.com/icebrian/docker/master/php-mysql-app/database.sql
         ports:
             - "3306:3306"
 
