@@ -1,0 +1,3 @@
+FROM cholzberger/easymysql
+
+MAINTAINER Istvan Cebrian

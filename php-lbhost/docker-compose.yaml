@@ -1,0 +1,22 @@
+version: '2'
+services:
+    db:
+        build:
+             context: .
+             dockerfile: icdata-dockerfile
+        environment:
+            user: root
+            password: Password1
+            right: WRITE
+            url: https://raw.githubusercontent.com/icebrian/docker/master/php-mysql-app/database.sql
+        ports:
+            - "3306:3306"
+
+    app:
+        build:
+            context: .
+            dockerfile: icfront-dockerfile
+        ports:
+            - 81:80
+        links:
+            - db:mysql
