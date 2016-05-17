@@ -3,7 +3,7 @@ services:
     lb:
         build:
              context: .
-             dockerfile: lb-dockerfile
+             image: eeacms/haproxy
         ports:
             - "80:80"
             - "1936:1936"
