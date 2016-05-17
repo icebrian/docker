@@ -5,9 +5,9 @@ lb:
     - "1936:1936"
   links:
     - web
+  restart: always
 web:
   build: web
-  ports:
-    - "80"
-  volumes:
-    - ./web/www:/var/www
+  links:
+    - rest
+  restart: always

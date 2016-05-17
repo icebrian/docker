@@ -1,5 +1,4 @@
 FROM tutum/apache-php
 
-MAINTAINER Istvan Cebrian
-
+COPY ./www /var/www/
 CMD ["/run.sh"]
