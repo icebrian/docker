@@ -1,9 +1,3 @@
-web:
-  build: web
-  ports:
-    - "80"
-  volumes:
-    - ./web/www:/var/www
 lb:
   image: eeacms/haproxy
   ports:
@@ -11,3 +5,9 @@ lb:
     - "1936:1936"
   links:
     - web
+web:
+  build: web
+  ports:
+    - "80"
+  volumes:
+    - ./web/www:/var/www

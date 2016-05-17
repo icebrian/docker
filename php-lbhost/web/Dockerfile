@@ -1,3 +1,5 @@
-FROM php:5.6-apache
+FROM tutum/apache-php
 
-COPY ./www /var/www/
+MAINTAINER Istvan Cebrian
+
+CMD ["/run.sh"]
