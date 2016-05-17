@@ -8,6 +8,6 @@ lb:
   restart: always
 web:
   build: web
-  links:
-    - rest
+  ports:
+    - "80"
   restart: always
