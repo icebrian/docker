@@ -1,4 +1,3 @@
-FROM tutum/apache-php
+FROM php:5.6-apache
 
 COPY ./www /var/www/
-CMD ["/run.sh"]
