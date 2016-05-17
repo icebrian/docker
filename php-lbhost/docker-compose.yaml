@@ -9,7 +9,6 @@ services:
             - "1936:1936"
         links:
             - web
-			
 
     web:
         build:
