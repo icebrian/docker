@@ -1,0 +1,3 @@
+FROM eeacms/haproxy
+
+MAINTAINER Istvan Cebrian
