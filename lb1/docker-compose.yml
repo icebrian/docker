@@ -8,4 +8,10 @@ haproxy:
   ports:
   - "80:80"
   - "1936:1936"
+<<<<<<< HEAD
   restart: always
+=======
+
+webapp:
+  image: eeacms/hello
+>>>>>>> 41f5853a3250ea7ede8d7388175b9c0fd0228f30
