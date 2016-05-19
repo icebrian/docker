@@ -1,10 +1,11 @@
+webapp:
+  image: dockercloud/hello-world:latest
+  restart: always
 haproxy:
-  image: eeacms/haproxy
+  image: eeacms/haproxy:1.5
   links:
   - webapp
   ports:
   - "80:80"
   - "1936:1936"
-
-webapp:
-  image: tutum/hello-world
+  restart: always

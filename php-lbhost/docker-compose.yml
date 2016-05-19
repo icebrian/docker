@@ -1,5 +1,5 @@
 lb:
-  image: eeacms/haproxy
+  image: eeacms/haproxy:1.5
   ports:
     - "80:80"
     - "1936:1936"
