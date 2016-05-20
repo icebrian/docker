@@ -17,6 +17,6 @@ services:
             context: .
             dockerfile: icfront-dockerfile
         ports:
-            - 81:80
+            - 82:80
         links:
             - db:mysql
