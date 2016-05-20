@@ -5,7 +5,7 @@ services:
     lb:
         image: dockercloud/haproxy
         ports:
-            - 80:80
+            - 83:80
             - 1936:1936
         links:
             - web
