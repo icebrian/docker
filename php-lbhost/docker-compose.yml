@@ -9,5 +9,3 @@ services:
             - 1936:1936
         links:
             - web
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
